@@ -19,6 +19,8 @@ export default defineConfig({
       scanOptions: {
         scanDirs: 'src/pages',
         entryFile: 'main.tsx',
+        filename: (name) =>
+          name === 'index' ? 'index.html' : `${name}/index.html`,
         template: '../../template.html',
       },
       transformHtml(html, ctx) {
