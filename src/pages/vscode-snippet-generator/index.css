@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+code {
+  background-color: #eee;
+  border-radius: 2px;
+  padding-inline: 2px;
+}
